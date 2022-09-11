@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(218deg, 23%, 16%);
+}
+
+.container {
+  position: relative;
+  width: min(35rem, 90vw);
+  height: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3rem;
+  border-radius: 0.6rem;
+  background-color: hsl(217deg, 19%, 24%);
+}
+.container .advice-number {
+  position: absolute;
+  top: 2rem;
+  text-transform: uppercase;
+  color: hsl(150deg, 100%, 66%);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 6px;
+}
+.container .quote {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 11.5rem;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+.container .quote q {
+  display: block;
+  text-align: center;
+  font-size: 1.75rem;
+  quotes: none;
+}
+.container .quote .author {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+.container .icon-divider {
+  position: absolute;
+  bottom: 3.5rem;
+}
+.container .container__btn-get-quote {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  translate: -50%;
+  border-radius: 50%;
+  background-color: hsl(150deg, 100%, 66%);
+  cursor: pointer;
+  transition: background-color 0.5s, filter 0.5s;
+}
+.container .container__btn-get-quote:hover {
+  background-color: #6bffb5;
+  filter: drop-shadow(1px 1px 8px hsl(150deg, 100%, 66%));
+}
+.container .container__btn-get-quote .icon-dice {
+  width: 45%;
+}
+.container .container__btn-get-quote .icon-dice img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@keyframes appear-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  translate: -50%;
+  text-align: center;
+}
+footer p.attribution {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 630px) {
+  .container {
+    height: 25rem;
+  }
+  .container .quote {
+    height: 14rem;
+  }
+  .container .quote q {
+    font-size: 1.5rem;
+  }
+  .container .quote .author {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
