@@ -63,6 +63,7 @@ body {
 .container .icon-divider {
   position: absolute;
   bottom: 3.5rem;
+  user-select: none;
 }
 .container .container__btn-get-quote {
   width: 4rem;
@@ -101,11 +102,9 @@ body {
 }
 
 footer {
-  width: 100%;
   position: absolute;
-  left: 50%;
-  bottom: 0;
-  translate: -50%;
+  width: 100%;
+  align-self: flex-end;
   text-align: center;
 }
 footer p.attribution {
