@@ -39,9 +39,10 @@ window.onload = () => {
     const numberData = localStorage.getItem('number')
     if (quoteData) {
         paragraphQuote.innerText = quoteData
+        paragraphQuote.style.quotes = 'initial'
         paragraphAuthor.innerText = `- ${authorData}`
-        adviceCounter = numberData
         adviceNumber.innerText = numberData
+        adviceCounter = numberData
     }
     return
 }

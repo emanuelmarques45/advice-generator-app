@@ -41,8 +41,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-made-with-html-sass-and-vanilla-js-BPfyt38Ado
+- Live Site URL: https://emanuelm45.github.io/advice-generator-app/
 
 ## My process
 
