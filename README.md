@@ -6,7 +6,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -14,7 +14,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -36,7 +35,7 @@ Users should be able to:
 #### Mobile Layout
 
 <p align="center">
-  <img src="https://github.com/emanuelm45/portfolio-images/blob/main/advice-generator-app/mobile.png">
+  <img src="https://github.com/emanuelm45/portfolio-images/blob/main/advice-generator-app/mobile.png" alt="Mobile">
 </p>
 
 ### Links
@@ -49,49 +48,42 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- SASS
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Desktop-first workflow
+- Vanilla JS
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I got a little more familiarized with fetch method to get information.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const getRandomQuote = async () => {
+    const req = await fetch('https://api.quotable.io/random?maxLength=100')
+    const res = await req.json()
+    return res
 }
+
+btnGetQuote.addEventListener('click', () => {
+  getRandomQuote().then(data => {
+    paragraphQuote.innerText = `${data.content}`
+    paragraphAuthor.innerText = `- ${data.author}`
+    adviceNumber.innerText = ++adviceCounter
+  )}
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I am going to search more about fetch and API to implement on my future projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
+- [Rapid API](https://rapidapi.com/) - This WebSite helped me find a good quote API
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Frontend Mentor - [@emanuelm45](https://www.frontendmentor.io/profile/emanuelm45)
+- LinkedIn - [Emanuel Marques](https://www.linkedin.com/in/emanuel-marques-541617215/)
