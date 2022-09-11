@@ -1,5 +1,5 @@
 const getRandomQuote = async () => {
-    const req = await fetch('http://api.quotable.io/random?maxLength=100')
+    const req = await fetch('https://api.quotable.io/random?maxLength=100')
     const res = await req.json()
     return res
 }
