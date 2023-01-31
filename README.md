@@ -30,18 +30,18 @@ Users should be able to:
 
 #### Desktop Layout
 
-![Desktop](https://github.com/emanuelm45/portfolio-images/blob/main/advice-generator-app/desktop.png)
+![Desktop](https://github.com/emanuelmarques45/portfolio-images/blob/main/advice-generator-app/desktop.png)
 
 #### Mobile Layout
 
 <p align="center">
-  <img src="https://github.com/emanuelm45/portfolio-images/blob/main/advice-generator-app/mobile.png" alt="Mobile">
+  <img src="https://github.com/emanuelmarques45/portfolio-images/blob/main/advice-generator-app/mobile.png" alt="Mobile">
 </p>
 
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub/advice-generator-app-made-with-html-sass-and-vanilla-js-BPfyt38Ado
-- Live Site URL: https://emanuelm45.github.io/advice-generator-app/
+- Live Site URL: https://emanuelmarques45.github.io/advice-generator-app/
 
 ## My process
 
